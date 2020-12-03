@@ -13,6 +13,9 @@ An api that reads a log file about a superhero race and returns information abou
 |localhost:3000/best-lap-info | To see the data about the best lap!
 
 ---
+ - There is a file called 'log.csv' in the root folder that can be sent via post
+
+---
 
 ## 🖥️ Usage
 
