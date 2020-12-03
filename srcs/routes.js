@@ -40,7 +40,6 @@ app.get('/', (req, res, next) => {
 */
 app.get('/all-heroes-info', (req, res, next) => {
 	res.status(200);
-	console.log(joinHeroesInfo(uploadedFileName));
 	res.json({
 		allHeroesInfo : joinHeroesInfo(uploadedFileName),
 	});
