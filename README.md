@@ -33,3 +33,9 @@ npm run start
 # unit tests
 -- on progress
 ```
+---
+
+## 🖥 Preview
+<p align="center">
+  <img src="./preview/preview.png" width="600" >
+</p>
