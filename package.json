@@ -1,0 +1,35 @@
+{
+  "name": "super-heroes-race-api",
+  "version": "1.0.0",
+  "description": "An api that reads a log file about a superhero race and returns information about it",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon srcs/server.js",
+    "start": "node srcs/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-moreira/super-heroes-race-api.git"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "csv",
+    "fileupload"
+  ],
+  "author": "Rodrigo Moreira Avila",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/r-moreira/super-heroes-race-api/issues"
+  },
+  "homepage": "https://github.com/r-moreira/super-heroes-race-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  }
+}
