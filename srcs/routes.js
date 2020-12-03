@@ -1,5 +1,4 @@
-const joinHeroesInfo = require('./app')
-const getRaceBestLap = require('./app')
+const { joinHeroesInfo, getRaceBestLap } = require('./app');
 const express = require('express');
 const multer = require('multer');
 const multerConfig = require('./config/multer');
@@ -40,7 +39,8 @@ app.get('/', (req, res, next) => {
 ** This route returns the information about each hero.
 */
 app.get('/all-heroes-info', (req, res, next) => {
-	res.status(200)
+	res.status(200);
+	console.log(joinHeroesInfo(uploadedFileName));
 	res.json({
 		allHeroesInfo : joinHeroesInfo(uploadedFileName),
 	});

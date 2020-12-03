@@ -70,7 +70,6 @@ function getLapTime(rowsInfo, codeNameMap) {
 ** and returns it to the caller.
 */
 function getHeroesInfo(columnsInfo, rowsInfo) {
-	console.log(columnsInfo);
 	const codeNameMap = getHeroesCodeAndName(columnsInfo);
 	const amountOfHeroes = codeNameMap.size;
 	const codeLapMap = getHeroesLapsCompleted(rowsInfo, codeNameMap);

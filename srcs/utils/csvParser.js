@@ -46,7 +46,6 @@ function csvParser(filePathAndName) {
 	/*
 	** Returns the parse information to the caller.
 	*/
-	console.log(columnsInfo)
 	return {
 		headerInfo,
 		rowsInfo,

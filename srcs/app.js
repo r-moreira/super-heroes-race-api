@@ -19,6 +19,7 @@ function joinHeroesInfo(fileName) {
 	** returns the information about rows and columns.
 	*/
 	const { columnsInfo, rowsInfo } = csvParser(fileName);
+
 	/*
 	** Calling auxiliary functions to add information to the object.
 	** - These functions will return objects of type 'map'.
@@ -63,17 +64,14 @@ function joinHeroesInfo(fileName) {
 	/*
 	** The object containing all hero data is returned to the server.
 	*/
-	console.log(heroesData);
 	return heroesData;
 };
-
-getHeroesInfo('log.csv');
 
 /*
 ** This is another important function.
 ** It returns the data for the best lap of the race.
 */
-function getRaceBestLap(fileName) {
+function getRaceBestLap(fileName, handleMs) {
 
 	/*
 	** - Calls an auxiliary function that parses the .csv file and
@@ -121,5 +119,4 @@ function getRaceBestLap(fileName) {
 	return bestLap;
 }
 
-module.exports = joinHeroesInfo;
-module.exports = getRaceBestLap;
+module.exports = { joinHeroesInfo,  getRaceBestLap }
